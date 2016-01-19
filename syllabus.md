@@ -16,8 +16,8 @@ knowledge and this course is an application-oriented introduction to modern
 statistical modeling and inference. We will discuss topics such as: study design, 
 descriptive statistics, data visualization, random variables, probability and 
 sampling distributions, point and interval estimates, hypothesis tests, 
-resampling procedures, and multiple regression. A wide variety of applications 
-from the natural and social sciences will be used.
+resampling procedures, multiple regression, and Bayesian models. A wide variety 
+of applications from the natural and social sciences will be used.
 
 ### Textbook
 
