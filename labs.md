@@ -14,6 +14,6 @@ designed for data analysis.
 ## RStudio server
 You can access your personal R session at:
 
-[rstudio.reed.edu](rstudio.reed.edu)
+[http://rstudio.reed.edu](http://rstudio.reed.edu)
 
-Using your Reed login and password.
+Your login credentials are the same as those for your Reed email account.
