@@ -4,16 +4,19 @@ title: Labs
 permalink: /labs/
 ---
 
-A key objective of this course is to gain the ability to read, wrangle,
-visualize, model, and think with data. Biologists have microscopes and gene 
-sequencers; Chemists have flask
+We meet in the laboratory (ETC 211) every Tuesday to tinker around with data and
+statistics. Our tool of choice is R, software that vastly amplifies 
+your power to explore, visualize, and model data. Reed's RStudio server is 
+accessible by going to [https://rstudio.reed.edu/](https://rstudio.reed.edu/) 
+and using your college login.
 
-In this class we'll be using R, a free and open-source language specifically 
-designed for data analysis.
+Every week you'll be working with a new data set and organizing your work in an
+RMarkdown document. You should complete work on your lab by Thursday at midnight.
 
-## RStudio server
-You can access your personal R session at:
+### Labs
 
-[http://rstudio.reed.edu](http://rstudio.reed.edu)
+### Resources
 
-Your login credentials are the same as those for your Reed email account.
+#### RMarkdown
+
+#### R
