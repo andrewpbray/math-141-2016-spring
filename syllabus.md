@@ -33,26 +33,8 @@ notes online, as class time will focus on activities to help understand concepts
 
 ### Class components
 
-<img src="figs/4-components.png" alt="components" width="500">
- 
-#### Labs
+This course has three components: Problem Sets, Labs, and Exams/Quizzes.
 
-We meet in the laboratory (ETC 211) every Tuesday to tinker around with data and
-statistics. Our tools of choice are R and RStudio, software that vastly amplifies 
-your power to explore, visualize, and model data. Reed's RStudio server is 
-accessible by going to [https://rstudio.reed.edu/](https://rstudio.reed.edu/) 
-and using your college login.
-
-Every week you'll be working with a new data set and organizing your work in an
-RMarkdown document. These will be submitted through moodle and will be due the
-following Monday morning at 10 am.
-
-#### Problem Sets
-
-There will be weekly problem sets to reinforce the concepts from the readings as
-well as the material that we address in class. You're encouraged to work on the 
-problem sets with fellow students, though you'll both need to turn in your own 
-work.
 
 #### Exams
 
@@ -60,12 +42,6 @@ We'll have several examinations throughout the semester in order to challenge
 your understanding and provide me with a sense of where you're at. Some will
 be more traditional pen and paper and others are to be done with the computer
 using R.
-
-#### Projects
-
-The best way to improve your skill in statistics is to do statistics on a real
-problem. There will be two small projects this semester that where you'll have
-the opportunity to go through a full statistical analysis from soup to nuts.
 
 #### More Resources
 
