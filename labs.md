@@ -16,9 +16,3 @@ RMarkdown document. You should complete work on your lab by Thursday at midnight
 ### Labs
 
 1. [Intro to R and RStudio](intro_to_r.Rmd)
-
-### Resources
-
-#### RMarkdown
-
-#### R
