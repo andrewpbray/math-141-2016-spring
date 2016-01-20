@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "Introduction to R and RStudio"
+title: Introduction to R and RStudio
+permalink: /labs/lab1
 published: false
 output:
   html_document:
