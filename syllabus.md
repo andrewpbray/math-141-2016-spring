@@ -50,6 +50,9 @@ your understanding and provide me with a sense of where you're at. Some will
 be more traditional pen and paper and others are to be done with the computer
 using R.
 
-#### More Resources
+### Important Dates
+
+
+### More Resources
 
 Dedicated tutors will be available at the DoJo, times TBA.
