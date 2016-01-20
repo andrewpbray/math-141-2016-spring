@@ -26,6 +26,8 @@ Office: Library 304
 [Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)  
 Office: ETC 223
 
+DoJo
+
 ### Textbook
 
 [OpenIntro: Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs) (2014),
@@ -52,7 +54,3 @@ using R.
 
 ### Important Dates
 
-
-### More Resources
-
-Dedicated tutors will be available at the DoJo, times TBA.
