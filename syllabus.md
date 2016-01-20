@@ -19,6 +19,13 @@ sampling distributions, point and interval estimates, hypothesis tests,
 resampling procedures, multiple regression, and Bayesian models. A wide variety 
 of applications from the natural and social sciences will be used.
 
+### Contact
+[Andrew Bray](https://andrewpbray.github.io)  
+Office: Library 304
+
+[Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)  
+Office: ETC 223
+
 ### Textbook
 
 [OpenIntro: Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs) (2014),
@@ -33,7 +40,7 @@ notes online, as class time will focus on activities to help understand concepts
 
 ### Class components
 
-This course has three components: Problem Sets, Labs, and Exams/Quizzes.
+This course has three components: , Labs, and Exams/Quizzes.
 
 
 #### Exams
