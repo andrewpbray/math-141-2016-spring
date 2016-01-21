@@ -7,7 +7,7 @@ permalink: /resources/
 
 ### RMarkdown
 - [link to prezi](https://prezi.com/dvmgx17e_was/reproducible/)
-- [how-to videos](https://www.youtube.com/watch?v=DNS7i2m4sB0)
+- [how-to video](https://www.youtube.com/watch?v=DNS7i2m4sB0)
 - [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
