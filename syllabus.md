@@ -27,6 +27,9 @@ Office: Library 304
 Office: ETC 223
 
 DoJo
+Sunday
+Wednesday
+Thursday
 
 ### Textbook
 
@@ -42,15 +45,23 @@ notes online, as class time will focus on activities to help understand concepts
 
 ### Class components
 
-This course has three components: , Labs, and Exams/Quizzes.
+This course has three components: Problem Sets, Labs, and Exams/Quizzes. For details
+on the first two, see the tabs at the top of the page.
 
 
 #### Exams
 
-We'll have several examinations throughout the semester in order to challenge
-your understanding and provide me with a sense of where you're at. Some will
+We'll have several examinations and quizzes throughout the semester in order to challenge
+your understanding and provide us with a sense of where you're at. Some will
 be more traditional pen and paper and others are to be done with the computer
 using R.
 
-### Important Dates
+**Midterm I**
+Friday, February 26 2016
+
+**Midterm II**
+Friday, April 8th (takehome)
+
+**Final**
+Wednesday, May 10, 2016, 9 AM - noon
 
