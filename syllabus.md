@@ -26,9 +26,9 @@ Office: Library 304
 [Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)  
 Office: ETC 223
 
-DoJo
-Sunday
-Wednesday
+**DoJo**  
+Sunday  
+Wednesday  
 Thursday
 
 ### Textbook
@@ -56,12 +56,12 @@ your understanding and provide us with a sense of where you're at. Some will
 be more traditional pen and paper and others are to be done with the computer
 using R.
 
-**Midterm I**
+**Midterm I**  
 Friday, February 26 2016
 
-**Midterm II**
+**Midterm II**  
 Friday, April 8th (takehome)
 
-**Final**
+**Final**  
 Wednesday, May 10, 2016, 9 AM - noon
 
