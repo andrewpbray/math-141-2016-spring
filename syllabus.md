@@ -24,7 +24,7 @@ of applications from the natural and social sciences will be used.
 Office: Library 304
 
 [Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)  
-Office: ETC 223
+Office: ETC 223 Blah
 
 DoJo
 
