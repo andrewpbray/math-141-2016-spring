@@ -15,6 +15,7 @@ permalink: /resources/
 
 ### R
 - [Datacamp: Intro to R Course](https://www.datacamp.com/courses/free-introduction-to-r)
+- [swirl: Learn R, in R](http://swirlstats.com/)
 - [Cookbook for R](http://www.cookbook-r.com/)
 - [RStudio IDE Cheatsheet](http://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
 - [Visualization Cheatsheet (ggplot2)](http://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf)
