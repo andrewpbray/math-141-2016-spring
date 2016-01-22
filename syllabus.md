@@ -36,7 +36,7 @@ Thursday
 [OpenIntro: Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs) (2014),
 by Diez, Barr and Çetinkaya-Rundel, available in three formats: pdf, 
 tablet-friendly pdf, and paperback edition. The textbook is free and open-source,
-but you're encouraged to purchase the paperback edition through amazon for < $10.
+but you're encouraged to purchase the paperback edition through Amazon for < $10.
 
 The textbook is a key component of the course. Our class will maintain a reading
 group at [nb.mit.edu](http://nb.mit.edu), which provides us with a 
@@ -51,16 +51,14 @@ on the first two, see the tabs at the top of the page.
 
 #### Exams
 
-We'll have several examinations and quizzes throughout the semester in order to challenge
-your understanding and provide us with a sense of where you're at. Some will
-be more traditional pen and paper and others are to be done with the computer
+We'll have several examinations and quizzes throughout the semester in order to challenge your understanding and provide us with a sense of where you're at. Some will be more traditional pen and paper and others are to be done with the computer
 using R.
 
 **Midterm I**  
-Friday, February 26 2016
+Friday, February 26, 2016
 
 **Midterm II**  
-Friday, April 8th (takehome)
+Friday, April 8, 2016 (takehome)
 
 **Final**  
 Wednesday, May 10, 2016, 9 AM - noon
