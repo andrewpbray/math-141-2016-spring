@@ -2,3 +2,4 @@ _site/
 .sass-cache
 .Rproj.user
 math-141.Rproj
+.Rhistory
