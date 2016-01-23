@@ -57,5 +57,5 @@ Friday, February 26, 2016
 Friday, April 8, 2016 (takehome)
 
 **Final**  
-Wednesday, May 10, 2016, 9 AM - noon
+Tuesday, May 10, 2016, 9 AM - noon
 
