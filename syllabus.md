@@ -37,11 +37,7 @@ Thursday
 by Diez, Barr and Çetinkaya-Rundel, available in three formats: pdf, 
 tablet-friendly pdf, and paperback edition. The textbook is free and open-source,
 but you're encouraged to purchase the paperback edition through Amazon for < $10.
-
-The textbook is a key component of the course. Our class will maintain a reading
-group at [nb.mit.edu](http://nb.mit.edu), which provides us with a 
-communal annotation engine. You will be asked to make and respond to reading 
-notes online, as class time will focus on activities to help understand concepts.
+The textbook is a key component of the course.
 
 ### Class components
 
