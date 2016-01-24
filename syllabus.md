@@ -20,11 +20,16 @@ resampling procedures, multiple regression, and Bayesian models. A wide variety
 of applications from the natural and social sciences will be used.
 
 ### Contact
-[Andrew Bray](https://andrewpbray.github.io)  
-Office: Library 304
+[Andrew Bray](https://andrewpbray.github.io)
 
-[Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)  
-Office: ETC 223
+- Office: Library 304
+- Office Hours:  Mondays and Wednesdays 3 PM - 4 PM and by appointment
+
+[Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)
+
+- Office: ETC 223
+- Office Hours:  Mondays 10 AM - 11 AM, Wednesdays 1:30 PM - 2:30 PM, and by appointment
+
 
 **DoJo**  
 Sunday  
