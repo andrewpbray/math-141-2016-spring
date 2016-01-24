@@ -25,7 +25,7 @@ of applications from the natural and social sciences will be used.
 - Office: Library 304
 - Office Hours:  Mondays and Wednesdays 3 PM - 4 PM and by appointment
 
-[Chester Ismay](https://www.reed.edu/cis/about/staff/ismay.html)
+[Chester Ismay](https://ismayc.github.io)
 
 - Office: ETC 223
 - Office Hours:  Mondays 10 AM - 11 AM, Wednesdays 1:30 PM - 2:30 PM, and by appointment
