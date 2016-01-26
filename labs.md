@@ -15,4 +15,4 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 ### Labs
 
-1. [Intro to R and RStudio](lab1.html)
+1. <a href = "{{ site.baseurl }}/assets/week-01/intro_to_r.html" target = "_blank">Intro to R and RStudio</a>
