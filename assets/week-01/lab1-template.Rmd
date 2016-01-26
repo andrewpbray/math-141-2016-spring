@@ -46,9 +46,6 @@ arbuthnot$girls
 ### On your own:
 
 **Load present day data**
-```{r}
-load(url("https://stat.duke.edu/~mc301/data/present.RData"))
-```
 
 #### 1:
 
