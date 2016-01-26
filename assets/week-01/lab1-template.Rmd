@@ -45,8 +45,6 @@ arbuthnot$girls
 
 ### On your own:
 
-**Load present day data**
-
 #### 1:
 
 
