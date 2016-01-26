@@ -1,9 +1,9 @@
----
+ ---
 title: "Lab 1 - Intro to R and RStudio"
 author: "Name"
 date: "Date of lab session"
 output: oilabs::lab_report
----
+ ---
 
 ```{r setup, include=FALSE}
 # DO NOT ALTER CODE IN THIS CHUNK
@@ -15,11 +15,6 @@ library(ggplot2)
 * * *
 
 ## Lab report
-
-**Load Arbuthnot data**
-```{r}
-load(url("https://stat.duke.edu/~mc301/data/arbuthnot.RData"))
-```
 
 #### Exercise 1: 
 
