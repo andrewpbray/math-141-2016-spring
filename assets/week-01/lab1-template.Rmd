@@ -1,8 +1,11 @@
----
+ ---
 title: "Lab 1 - Intro to R and RStudio"
 author: "Name"
 date: "Date of lab session"
-output: oilabs::lab_report
+output: 
+  html_document: 
+    highlight: pygments
+    theme: spacelab
 ---
 
 ```{r setup, include=FALSE}
@@ -10,16 +13,12 @@ output: oilabs::lab_report
 knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(ggplot2)
+library(oilabs)
 ```
 
 * * *
 
 ## Lab report
-
-**Load Arbuthnot data**
-```{r}
-load(url("https://stat.duke.edu/~mc301/data/arbuthnot.RData"))
-```
 
 #### Exercise 1: 
 
@@ -45,11 +44,6 @@ arbuthnot$girls
 * * *
 
 ### On your own:
-
-**Load present day data**
-```{r}
-load(url("https://stat.duke.edu/~mc301/data/present.RData"))
-```
 
 #### 1:
 
