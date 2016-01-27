@@ -50,7 +50,7 @@ The individual unit on which you make observations
 
 ### Principles of Data Collection for Inference
 
-**case/observational unit** - the individual unit on which you make observations (a row in a data frame) [In `arbuthnot` data set, case is `year`]
+**case/observational unit** - the individual unit on which you make observations (a row in a data frame) [In `arbuthnot` data set, a case is a single year]
 
 **population** - the target group of observational units about which you'd like to make inferences [size of the population: $N$]
   
