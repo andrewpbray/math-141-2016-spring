@@ -79,7 +79,7 @@ You're a senior Psychology major conducting a study that examines procrastinatio
 
 ## {.flexbox .vcenter}
 
-<img src="../figs/landon-fdr.png" alt="shoebill1" width="750">
+<img src="../figs/landon-fdr.png" alt="landon-fdr" width="750">
 
 
 ## Landon v. FDR, 1936
