@@ -27,13 +27,13 @@
 
 \title{MATH 141:\\Intro to Probability and Statistics}
 \author{Prof. Bray}
-\date{Fall 2015}
+\date{Spring 2016}
 
-\rhead{\textsc{September 4, 2014}}
+\rhead{\textsc{January 29, 2016}}
 
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 
 \paragraph{Experimental Design}
 
