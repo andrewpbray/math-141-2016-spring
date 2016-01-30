@@ -31,7 +31,7 @@ of applications from the natural and social sciences will be used.
 - Office Hours:  Mondays 10 AM - 11 AM, Wednesdays 1:30 PM - 2:30 PM, and by appointment
 
 
-**Tutoring**
+**Evening Help Session**
 
 - Math Lounge (L318)
 - Sunday - 7-9 PM
