@@ -42,7 +42,7 @@ mean(~salary, data = strat.samp)
 
 ```{r comp, echo=FALSE}
 # Comparison
-SRS <- do(1000) * mean(~salary, data = df)
+SRS <- do(1000) * mean(~salary, data = sample(df, 40))
 STR <- do(1000) * mean(~salary, data = rbind(sample(subset(df, teams == "yankees"), 10),
                                              sample(subset(df, teams == "padres"), 10),
                                              sample(subset(df, teams == "mariners"), 10),
