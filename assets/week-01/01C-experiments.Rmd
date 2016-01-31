@@ -19,7 +19,7 @@ head(df)
 
 ## Population view
 
-```{r plot-strat, echo = FALSE, message=FALSE}
+```{r plot-strat, echo = FALSE, message=FALSE, warning=FALSE}
 library(mosaic)
 densityplot(~salary, groups = teams, data = df, auto.key = TRUE)
 ```
