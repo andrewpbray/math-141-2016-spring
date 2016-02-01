@@ -52,7 +52,7 @@
 \ans
 \ans
 
-\item For each of the following pairs of variables, a statistically signficant positive relationship has been observed. Identify a third variable that might cause the spurious correlation.
+\item For each of the following pairs of variables, a statistically significant positive relationship has been observed. Identify a third variable that might cause the spurious correlation.
 \begin{enumerate}
   \itemsep0.5in
   \item The amount of ice cream sold in New England and the number of deaths by drowning
