@@ -25,11 +25,11 @@ library(ggplot2)
 
 **Modality**
 
-<img src="../../figs/modality.png" alt="modality" width="750">
+<img src="../figs/modality.png" alt="modality" width="750">
 
 **Skewness**
 
-<img src="../../figs/skewness.png" alt="skewness" width="750">
+<img src="../figs/skewness.png" alt="skewness" width="750">
 
 
 ## Shape Q
@@ -215,7 +215,7 @@ Which measure(s) of center would be sensitive to the presence of outliers?
 
 ## Mean vs median {.build}
 
-<img src="../../figs/skew-sym.png" alt="skewsym" width="750">
+<img src="../figs/skew-sym.png" alt="skewsym" width="750">
 
 The mean (red line) is sensitive to extreme values, so it gets pulled towards 
 the tail. The median (dashed line) is less sensitive.
@@ -232,11 +232,5 @@ y <- factor(rep(c("ls", "rs", "sym"), each = 50))
 df <- data.frame(x, y)
 ggplot(df, aes(x = x, groups = y)) + geom_density()
 ```
-
-
-## Practice
-
-- Find your numerical pair
-- Work through the practice problems
 
 
