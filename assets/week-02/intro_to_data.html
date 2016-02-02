@@ -138,8 +138,7 @@ $(document).ready(function () {
 </div>
 
 
-<div id="template">
-<p><strong>Your reproducible lab report: </strong> Before you get started, you can access the template Rmd file by clicking File &gt; New File &gt; R Markdown &gt; From template &gt; R Markdown Lab report</p>
+<strong>Your reproducible lab report: </strong> Before you get started, you can access the template Rmd file by clicking File &gt; New File &gt; R Markdown &gt; From template &gt; R Markdown Lab report
 </div>
 <p>Some define statistics as the field that focuses on turning information into knowledge. The first step in that process is to summarize and describe the raw information - the data. In this lab we explore flights, specifically all 162,049 domestic flights that departed from the largest airports in the Pacific Northwest, Seattle-Tacoma and Portland International Airports, in 2014. We will generate simple graphical and numerical summaries of data on these flights and explore delay times. As this is a large data set, along the way you’ll also learn the indispensable skills of data processing and subsetting.</p>
 <p>To start the lab you’ll need to load in the packages that we’ll be using today.</p>
@@ -187,7 +186,7 @@ $(document).ready(function () {
 <li><code>origin</code>, <code>dest</code>: Airport codes for origin and destination. (Google can help you with what code stands for which airport.)</li>
 <li><code>air_time</code>: Amount of time spent in the air, in minutes.</li>
 <li><code>distance</code>: Distance flown, in miles.</li>
-<li><code>hour</code>, <code>minute</code>: Time of departure broken in to hour and minutes.</li>
+<li><code>hour</code>, <code>minute</code>: Time of departure broken into hour and minutes.</li>
 </ul>
 <p>A very useful function for taking a quick peek at your data frame, and viewing its dimensions and data types is <code>str</code>, which stands for <strong>str</strong>ucture.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">str</span>(flights)</code></pre></div>
@@ -225,7 +224,7 @@ $(document).ready(function () {
 <ol style="list-style-type: decimal">
 <li>How do these three histograms with the various binwidths compare?</li>
 </ol>
-<p>If we want to focus on departure delays of flights leaving from PDX only, we need to first <code>filter</code> the data for flights leaving PDX (<code>dest == &quot;PDX&quot;</code>) and then make a histogram of only departure delays of only those flights.</p>
+<p>If we want to focus on departure delays of flights leaving from PDX only, we need to first <code>filter</code> the data for flights leaving PDX (<code>origin == &quot;PDX&quot;</code>) and then make a histogram of only departure delays of only those flights.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pdx_flights &lt;-<span class="st"> </span><span class="kw">filter</span>(flights, origin ==<span class="st"> &quot;PDX&quot;</span>)
 <span class="kw">qplot</span>(<span class="dt">x =</span> dep_delay, <span class="dt">data =</span> pdx_flights, <span class="dt">geom =</span> <span class="st">&quot;histogram&quot;</span>)</code></pre></div>
 <p>Let’s decipher these three lines of code:</p>
