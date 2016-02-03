@@ -57,4 +57,21 @@ the following variables:
 \item IQ scores
 \end{itemize}
 
+\newpage
+
+\paragraph{Experimental Design Review}
+
+\begin{enumerate}
+  \item What is the best way to answer each of the questions below: an experiment, a sample survey, or an observational study that is not a sample survey? Explain your choices.
+  \begin{enumerate}
+    \itemsep0.4in
+    \item Are people generally satisfied with how things are going in the country right now?
+    \item Do college students learn basic accounting better in a classroom or using an online course?
+    \item How long do your teachers wait on average after they ask their class a question?
+    \ans
+  \end{enumerate}
+  
+  \item Students sign up to be subjects in a psychology experiment. When they arrive, they are told that interviews are running late and are taken to a waiting room. The experimenters then stage a theft of a valuable object left in the waiting room. Some subjects are alone with the thief, and others are in pairs - these are the treatments being compared. Will the subject report the theft? The students had agreed to take part in an unspecified study, and the true nature of the experiment is explained to them afterward. Do you think this study is ethically OK?
+  \end{enumerate}
+
 \end{document}
