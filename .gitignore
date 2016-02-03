@@ -3,3 +3,6 @@ _site/
 .Rproj.user
 math-141.Rproj
 .Rhistory
+*.tex
+*.log
+*.syntex.gz
