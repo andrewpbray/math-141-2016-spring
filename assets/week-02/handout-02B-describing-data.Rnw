@@ -26,14 +26,8 @@
 \newcommand{\cmd}[1]{\texttt{#1}}
 
 \title{MATH 141:\\Intro to Probability and Statistics}
-\author{Prof. Bray}
-\date{Fall 2015}
-
-\rhead{\textsc{September 9, 2014}}
-
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \paragraph{Thought Experiment}
 Consider the following two variables:
