@@ -35,7 +35,7 @@ of applications from the natural and social sciences will be used.
 
 - Math Lounge (L318)
 - Sunday - 7-9 PM
-- Thursday - 7-9 PM
+- Thursday - 7-10 PM
 
 ### Textbook
 
