@@ -20,3 +20,5 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 1. <a href = "{{ site.baseurl }}/assets/week-01/intro_to_r.html" target = "_blank">Intro to R and RStudio</a> (<a href = "{{ site.baseurl }}/assets/week-01/lab1-template.Rmd" target = "_blank">template</a>)
 
 2. <a href = "{{ site.baseurl }}/assets/week-02/intro_to_data.html" target = "_blank">Intro to Data</a>
+
+3. <a href = "{{ site.baseurl }}/assets/week-03/probability.html" target = "_blank">Probability</a>
