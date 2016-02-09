@@ -18,6 +18,7 @@ permalink: /resources/
 - [swirl: Learn R, in R](http://swirlstats.com/)
 - [Cookbook for R](http://www.cookbook-r.com/)
 - [RStudio IDE Cheatsheet](http://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+- [Getting Started with `qplot`](http://docs.ggplot2.org/dev/vignettes/qplot.html)
 - [`qplot` Function Arguments](http://www.statmethods.net/advgraphs/ggplot2.html)
 - [Visualization Cheatsheet (ggplot2)](http://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf)
 - [Data Wrangling Cheatsheet (dplyr)](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
