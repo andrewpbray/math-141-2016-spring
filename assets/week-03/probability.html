@@ -170,7 +170,7 @@ $(document).ready(function () {
 </ol>
 <p>The custom function <code>calc_streak</code>, which was loaded in with the <code>oilabs</code> package, may be used to calculate the lengths of all shooting streaks and then look at the distribution.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">kobe_streak &lt;-<span class="st"> </span><span class="kw">calc_streak</span>(kobe$basket)
-<span class="kw">qplot</span>(<span class="dt">x =</span> kobe_streak, <span class="dt">geom =</span> <span class="st">&quot;bar&quot;</span>)</code></pre></div>
+<span class="kw">qplot</span>(<span class="dt">x =</span> <span class="kw">factor</span>(kobe_streak), <span class="dt">geom =</span> <span class="st">&quot;bar&quot;</span>)</code></pre></div>
 <p>Note that instead of making a histogram, we chose to make a bar plot from a table of the streak data. A bar plot is preferable here since our variable is discrete – counts – instead of continuous.</p>
 <p>Also note that <code>kobe_streak</code> is stored as a vector by itself and is NOT in a data frame. We, therefore, don’t need to specify the <code>data =</code> argument to <code>qplot</code>.</p>
 <ol start="2" style="list-style-type: decimal">
