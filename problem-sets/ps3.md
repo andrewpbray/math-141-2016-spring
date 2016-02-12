@@ -164,7 +164,7 @@ make less than $50,000 per year. Use this value to
 determine whether or not the assumption you made in
 part (c) is valid.
 
-####Extra Challenge Problem
+#### Extra Challenge Problem
 
 A chord of a circle is a straight line segment whose endpoints
 both lie on the circle. For a fixed circle, what is the probability that the length of a randomly drawn
