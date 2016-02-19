@@ -6,7 +6,7 @@ permalink: /problem-sets/ps3/
 
 <style type="text/css">
     ul { list-style-type: lower-alpha; }
-    ul ul {  list-style-type: lower-roman;  }
+    ul ul { list-style-type: lower-roman; }
 </style>
 
 
