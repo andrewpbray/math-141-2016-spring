@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Problem Set 4
-permalink: /problem-sets/PS4/
+permalink: /problem-sets/ps4/
 ---
 
 <style type="text/css">
