@@ -44,4 +44,24 @@ corresponding standard deviation.
 what standard deviation? Note any assumptions you make and if you think they are
 justified.
 
+#### 4
 
+The manufacturer of a low-calorie dairy drink wishes to compare the taste appeal of a new
+formula (formula _B_) with that of the standard formula (formula _A_). Each of four judges is given three
+glasses in random order, two containing formula _A_ and the other containing formula _B_. Between each tasting, all judges' palates are completely cleansed with milk.  Each judge is
+asked to state which glass he or she most enjoyed. Suppose that the two formulas are equally tasty. Let
+_Y_ be the number of judges stating a preference for the new formula.
+
+  - Which named random variable (Bernoulli, Binomial, Poisson) is _Y_? Why?
+  - Find the probability mass function for _Y_: $$\mathbb{P} (Y = y)$$.
+  - What is the probability that at least three of the four judges state a preference for the new
+formula?
+  - Calculate the expected value of _Y_ using the definition of expected value of a random variable.
+  - Calculate the variance of _Y_ using the definition of variance of a random variable.
+  - Calculate and interpret the standard deviation of _Y_.
+  
+#### 5
+
+The number of power surges in an electric grid has a Poisson distribution with a mean of
+one power surge every twelve hours. What is the probability that there will be no more than one power
+surge in a 24-hour period?
