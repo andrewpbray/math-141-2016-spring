@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Problem Set 4
-permalink: /problem-sets/ps4/
+permalink: /problem-sets/PS4/
 ---
 
 <style type="text/css">
@@ -26,8 +26,8 @@ Consider the following card game with a well-shuffled deck of cards. If you draw
 you win nothing. If you get a spade, you win $5. For any club, you win $10 plus an extra $20
 for the ace of clubs.
 
-  - Create table (sometimes called a probability model) that expresses the amount you win at this game in terms of a random
-  variable; i.e. a column for the possible values and another column for their repective
+  - Create a table (sometimes called a probability model) that expresses the amount you win at this game in terms of a random
+  variable; i.e. a column for the possible values and another column for their respective
   probabilities. Also, find the expected winnings for a single game and the standard deviation of the winnings.
   - What is the maximum amount you would be willing to pay to play this game? Explain
 your reasoning.
