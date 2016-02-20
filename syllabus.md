@@ -34,8 +34,8 @@ of applications from the natural and social sciences will be used.
 **Evening Help Session**
 
 - Math Lounge (L318)
-- Sunday - 7-9 PM
-- Thursday - 7-10 PM
+    - Sunday - 7-9 PM
+    - Thursday - 7-10 PM
 
 ### Textbook
 
@@ -63,5 +63,5 @@ Friday, February 26, 2016
 Friday, April 8, 2016 (takehome)
 
 **Final**  
-Tuesday, May 10, 2016, 9 AM - noon
+Tuesday, May 10, 2016, 9 AM - 11 AM (Eliot 314)
 
