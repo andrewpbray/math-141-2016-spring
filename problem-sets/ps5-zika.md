@@ -9,15 +9,15 @@ permalink: /problem-sets/ps5-zika/
     ul ul { list-style-type: lower-roman; }
 </style>
 
-#### 1
+#### A
 
 Are the "case-control studies" suggested experiments or observational studies?  Why?
 
-#### 2
+#### B
 
 What other confounding variables could be explaining the relationship between Zika and microcephaly cases?
 
 
-#### 3
+#### C
 
 What would be needed statistically to conclude that Zika is causing microcephaly?  Think carefully about content covered in Chapter 1 as well as Chapter 2.
