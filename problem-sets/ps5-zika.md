@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Problem Set 5 - Zika Causation Web Article
-permalink: /problem-sets/ps5/
+permalink: /problem-sets/ps5-zika/
 ---
 
 <style type="text/css">
