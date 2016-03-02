@@ -120,63 +120,7 @@ $x_{obs} = 75 \times 0.66 = 50$
 
 What is $P(X > x_{obs})$?
 
-
-## Let's simplify
-
-Let $X$ be the total number of people in a sample of size 3 that favor same-sex
-marriage if the true population proportion that favor is 0.5.
-
-<center>
-<img src="../figs/binom1.png" alt="binom1" height = 370>
-</center>
-
-
-## Let's simplify
-
-Let $X$ be the total number of people in a sample of size 3 that favor same-sex
-marriage if the true population proportion that favor is 0.5.
-
-<center>
-<img src="../figs/binom2.png" alt="binom2" height = 370>
-</center>
-
-```{r, echo=FALSE, eval=FALSE}
-x1  <- 0:3
-df <- data.frame(x = x1, y = dbinom(x1, 3, 0.5))
-qplot(x, y, data = df) + geom_bar(stat = "identity", col = "darkgreen", fill = "white")
-```
-
-
-## Let's simplify
-
-Let $X$ be the total number of people in a sample of size 3 that favor same-sex
-marriage if the true population proportion that favor is 0.5.
-
-<center>
-<img src="../figs/binom3.png" alt="binom3" height = 370>
-</center>
-
-
-## Binomial distribution {.build}
-
-The sum of independent trials that succeed with probability $p$ will be 
-distributed as a binomial random variable, X;
-
-$$ X \sim Bin(n, p) $$
-
-$$ P(X = x) = \binom{n}{x}p^x(1-p)^{n-x} $$
-
-
-## Binomial Distribution {.build}
-
-Let $X$ be the total number of people in a sample of size 75 that favor same-sex
-marriage if the true population proportion that favor is 0.5.
-
-$x_{obs} = 75 \times 0.66 = 50$
-
-What is $P(X > x_{obs})$?
-
-$$ X \sim Binom(n = 74, p = .5) $$
+$$ X \sim Binom(n = 75, p = .5) $$
 
 
 ## The Null Distribution
