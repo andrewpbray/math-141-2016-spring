@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Problem Set 7 - p-value Web Articles
-permalink: /problem-sets/ps5-zika/
+permalink: /problem-sets/ps7-extra/
 ---
 
 <style type="text/css">
@@ -28,4 +28,4 @@ In what ways would reproducible analysis help many of the issues that were discu
 
 #### E
 
-What is meant by "treat statistics as a science, and not a recipe"?
+What is meant by "treat statistics as a science, and not a recipe"
