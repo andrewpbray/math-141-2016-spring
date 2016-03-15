@@ -27,6 +27,8 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 5. <a href = "{{ site.baseurl }}/assets/week-07/inf_for_categorical_data.html" target = "_blank">Inference for Categorical Data</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.Rmd" target = "_blank">KEY</a>)
 
+6. <a href = "{{ site.baseurl }}/assets/week-08/roadless_usa.html" target = "_blank">Sampling and Estimation for Proportions</a>
+
 <!--
 (<a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.Rmd" target = "_blank">KEY</a>) 
 -->
