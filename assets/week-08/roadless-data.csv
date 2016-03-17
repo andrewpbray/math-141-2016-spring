@@ -45,7 +45,7 @@ latitude,longitude,withinContinent,within1mile,location
 46.7547,-98.2299,1,1,North Dakota
 38.0176,-78.3544,1,1,Virginia
 34.5017,-92.157,1,1,Arkansas
-26.6727,-69.2751,0,0,Atlantic Ocean
+26.6727,-69.2751,0,0,Atlantic
 40.8512,-91.5804,1,1,Iowa
 35.9687,-99.7064,1,1,Oklahoma
 39.3426,-105.2077,1,0,Colorado
@@ -221,7 +221,7 @@ latitude,longitude,withinContinent,within1mile,location
 32.9867,-107.2063,1,1,New Mexico
 29.7659,-71.4626,0,0,Atlantic
 34.9742,-67.5418,0,0,Atlantic
-32.7221,-88.4923,1,1,Mississipi 
+32.7221,-88.4923,1,1,Mississippi 
 47.5389,-80.3308,0,0,Canada
 34.7287,-109.8078,1,1,Arizona
 38.1629,-120.7454,1,0,California
