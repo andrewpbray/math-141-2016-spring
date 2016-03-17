@@ -14,7 +14,7 @@ library(ggplot2)
 library(ggmap)
 ```
 
-## 
+## All sampled points
 
 ```{r echo = FALSE, cache=TRUE}
 d <- read.csv("roadless-data.csv", header = TRUE)
@@ -25,7 +25,7 @@ ggmap(m) +
   geom_point(data = d, aes(x = longitude, y = latitude), alpha = .6)
 ```
 
-##
+## Within the US
 
 ```{r echo = FALSE}
 # within continental US
@@ -35,7 +35,7 @@ ggmap(m) +
 ```
 
 
-##
+## Within the US
 
 ```{r echo = FALSE}
 # within continental US
@@ -45,7 +45,7 @@ ggmap(m) +
   scale_colour_manual(values=c("blue"), guide = FALSE)
 ```
 
-##
+## Within 1 mile
 
 ```{r echo = FALSE}
 ggmap(m) + 
