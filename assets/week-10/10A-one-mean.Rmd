@@ -126,12 +126,6 @@ $df = n - 1$.
 
 ## Finding $p$-values and $t^*_{df}$ {.build}
 
-<!--
-<center>
-<img src="../figs/t-table.png" width = 350>
-</center>
--->
-
 ```{r}
 pt(-2.2, df = 18)
 qt(.025, df = 18)
