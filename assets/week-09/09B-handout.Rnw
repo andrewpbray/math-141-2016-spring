@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fancyhdr,url,hyperref}
+\usepackage{enumerate,multirow}
+
+\oddsidemargin 0in  %0.5in
+\topmargin     0in
+\leftmargin    0in
+\rightmargin   0in
+\textheight    9in
+\textwidth     6.5in %6in
+
+\pagestyle{fancy}
+
+\lhead{\textsc{MATH 141}}
+\chead{\textsc{Practice}}
+\lfoot{}
+\cfoot{}
+%\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\newcommand{\ans}{\vspace{1.5in}}
+\newcommand{\R}{{\sf R}\xspace}
+\newcommand{\cmd}[1]{\texttt{#1}}
+
+\title{MATH 141:\\Intro to Probability and Statistics}
+\author{Prof. Bray and Prof. Ismay}
+\date{Spring 2016}
+
+\rhead{\textsc{March 30, 2016}}
+
+
+\begin{document}
+
+\noindent \textbf{Work hours and education}
+
+\noindent The General Social Survey collects data on demographics, education, and work, among many other characteristics of US residents. The histograms below display the distributions of hours worked per week for two education groups: those with and without a college degree. Suppose we want to estimate the average difference between the number of hours worked per week by all Americans with a college degree and those without a college degree. Summary information for each group is shown in the tables.
+\vspace{5mm}
+
+\noindent\begin{minipage}[c]{0.65\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{workDeg_work_edu_hist}
+\end{center}
+\end{minipage}
+\begin{minipage}[c]{0.35\textwidth}
+\begin{tabular}{l c}
+\hline
+		& College degree	\\
+\hline
+Mean 	& 41.8 hrs		\\
+SD 		& 15.1 hrs		\\
+n 		& 505		\\
+		& \\
+\hline
+		& No college degree \\
+\hline
+Mean	& 39.4 hrs \\
+SD		& 15.1 hrs \\
+n		& 667
+\end{tabular}
+\end{minipage}
+
+\begin{enumerate}[a)]
+\item What is the parameter of interest, and what is the point estimate?
+\vspace{10mm}
+\item Are conditions satisfied for estimating this difference using a confidence interval?
+\vspace{22mm}
+\item Create a 95\% confidence interval for the difference in number of hours worked between the two groups, and interpret the interval in context.
+\vspace{40mm}
+\item Can you think of any real world justification for your results? (\textit{Note:} There isn't a single correct answer to this question.)
+\end{enumerate}
+
+\end{document}
