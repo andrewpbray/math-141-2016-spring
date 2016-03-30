@@ -61,7 +61,7 @@ diff(ds$mean)
 - We can calculate a standard error
 
 ```{r}
-sqrt(ds$s[1]/sqrt(ds$n[1]) + ds$s[2]/sqrt(ds$n[2]))
+sqrt(ds$s[1]^2/sqrt(ds$n[1]) + ds$s[2]^2/sqrt(ds$n[2]))
 ```
 
 - We can calculate the df
@@ -136,7 +136,7 @@ qplot(x = diff, data = g, geom = "density",fill = I("linen"), col = I("darkseagr
 
 ```{r}
 gs$s/sqrt(gs$n)
-sqrt(ds$s[1]/sqrt(ds$n[1]) + ds$s[2]/sqrt(ds$n[2]))
+sqrt(ds$s[1]^2/sqrt(ds$n[1]) + ds$s[2]^2/sqrt(ds$n[2]))
 ```
 
 While the point estimate is the same in the paired and independent tests, if
