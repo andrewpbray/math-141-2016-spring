@@ -17,6 +17,7 @@ library(openintro)
 
 ## Naive analysis {.build}
 
+REPLACE WITH BETTER SLIDES FROM THE FOLLOWING DAY
 Consider a data set containing the IQs of 36 men and the IQs of 36 women. Can use
 this data to test the following?
 
