@@ -68,21 +68,6 @@ likely to be significantly different from each other?
 4. most: III, least: II
 
 
-##
-Which of the following plots shows groups with means that are *most* and *least*
-likely to be significantly different from each other?
-
-<center>
-<img src="../figs/3-anovas.png" width = 700>
-</center>
-</br>
-
-1. **most: I, least: II**
-2. most: II, least: III
-3. most: I, least: III
-4. most: III, least: II
-
-
 #
 ##
 <center>
