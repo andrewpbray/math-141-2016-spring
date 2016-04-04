@@ -2,7 +2,6 @@
 title: 'Inference for numerical data'
 output:
   html_document:
-#    css: ../lab.css
     highlight: pygments
     theme: cerulean
 ---
@@ -12,13 +11,6 @@ knitr::opts_chunk$set(fig.height = 3, fig.width = 9)
 options(width = 80)
 ```
 
-## North Carolina births
-
-In 2004, the state of North Carolina released a large data set containing 
-information on births recorded in this state. This data set is useful to 
-researchers studying the relation between habits and practices of expectant 
-mothers and the birth of their children. We will work with a random sample of 
-observations from this data set.
 
 ## Exploratory analysis
 
@@ -78,9 +70,12 @@ $$H_A: \mu_{smoking} - \mu_{nonsmoking} \neq 0$$
 
 *The test statistic is*
 
-$$ T = \frac{{X}\text{-bar}_{smoking} - {X}{\text{-bar}}_{nonsmoking}}{{SE}_{\bar{X}_{smoking} - \bar{X}_{nonsmoking}}} $$
 
-*where ${SE}_{\bar{X}_{smoking} - \bar{X}_{nonsmoking}} = \sqrt{\dfrac{s_{smoking}^2}{n_{smoking}} + \dfrac{s_{nonsmoking}^2}{n_{nonsmoking}}}$.*
+$$ T = \dfrac{\bar{X}_{smoking} - \bar{X}_{nonsmoking}}{SE \text{ of } \bar{X}_{smoking} - \bar{X}_{nonsmoking}} $$
+
+*where* 
+
+$$SE \text{ of } \bar{X}_{smoking} - \bar{X}_{nonsmoking} = \sqrt{\dfrac{s_{smoking}^2}{n_{smoking}} + \dfrac{s_{nonsmoking}^2}{n_{nonsmoking}}}.$$
 
 *We expect it to follow a $t$ distribution with 125 degrees of freedom or the
 Normal distribution.*
@@ -179,8 +174,10 @@ right skew in the distribution of weight gains, but the sample size is sufficien
 that the nearly normal condition can be relaxed.*
 
 ```{r oyo3, eval = TRUE}
-inference(y = nc$gained, x = nc$mature, est = "mean", type = "ht", alternative = "twosided", null = 0,
-          method = "theoretical")
+inference(y = nc$gained, x = nc$mature, 
+  est = "mean", type = "ht", 
+  alternative = "twosided", null = 0,
+  method = "theoretical")
 ```
 
 *With a p-value of .1686, the observed difference in weights was not significant
