@@ -29,7 +29,7 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 6. <a href = "{{ site.baseurl }}/assets/week-08/roadless_usa.html" target = "_blank">Sampling and Estimation for Proportions</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab6-key.Rmd" target = "_blank">KEY</a>)
 
-7. <a href = "{{ site.baseurl }}/assets/week-09/inf_for_numerical_data.html" target = "_blank">Inference for Numerical Data </a>
+7. <a href = "{{ site.baseurl }}/assets/week-09/inf_for_numerical_data.html" target = "_blank">Inference for Numerical Data </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab7-key.Rmd" target = "_blank">KEY</a>)
 
 <!--
 (<a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.Rmd" target = "_blank">KEY</a>) 
