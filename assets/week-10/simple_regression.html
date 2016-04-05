@@ -209,7 +209,7 @@ $(document).ready(function () {
 </div>
 <div id="model-diagnostics" class="section level2">
 <h2>Model diagnostics</h2>
-<p>To assess whether the linear model is reliable, we need to check for (1) linearity, (2) nearly normal residuals, and (3) constant variability.</p>
+<p>To assess whether the linear model is reliable, we need to check for (1) linearity, (2) nearly normal residuals, and (3) constant variability. Constant variability refers to the variability of points around the least squares line remaining roughly constant. More information is available on page 238 of the <a href="https://drive.google.com/a/reed.edu/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/view">OpenIntro textbook</a>.</p>
 <p><strong>Linearity</strong>: You already checked if the relationship between runs and at-bats is linear using a scatterplot. We should also verify this condition with a plot of the residuals vs. at-bats.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">qplot</span>(<span class="dt">x =</span> .fitted, <span class="dt">y =</span> .resid, <span class="dt">data =</span> m1) +
 <span class="st">  </span><span class="kw">geom_hline</span>(<span class="dt">yintercept =</span> <span class="dv">0</span>, <span class="dt">linetype =</span> <span class="st">&quot;dashed&quot;</span>) +
