@@ -33,7 +33,4 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 8. <a href = "{{ site.baseurl }}/assets/week-10/simple_regression.html" target = "_blank">Introduction to Linear Regression </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab8-key.Rmd" target = "_blank">KEY</a>) 
 
-
-<!--
-(<a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.Rmd" target = "_blank">KEY</a>) 
--->
+9. <a href = "{{ site.baseurl }}/assets/week-11/simple_linear_regression_ii.html" target = "_blank">Simple Linear Regression II </a> <!--(<a href = "{{ site.baseurl }}/assets/lab-keys/lab9-key.Rmd" target = "_blank">KEY</a>) -->
