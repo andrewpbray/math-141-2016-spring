@@ -31,7 +31,7 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 7. <a href = "{{ site.baseurl }}/assets/week-09/inf_for_numerical_data.html" target = "_blank">Inference for Numerical Data </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab7-key.Rmd" target = "_blank">KEY</a>)
 
-8. <a href = "{{ site.baseurl }}/assets/week-10/simple_regression.html" target = "_blank">Introduction to Linear Regression </a>
+8. <a href = "{{ site.baseurl }}/assets/week-10/simple_regression.html" target = "_blank">Introduction to Linear Regression </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab8-key.Rmd" target = "_blank">KEY</a>) 
 
 
 <!--
