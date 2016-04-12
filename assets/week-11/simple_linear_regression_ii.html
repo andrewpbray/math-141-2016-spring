@@ -148,7 +148,7 @@ $(document).ready(function () {
 <div id="twins-and-iq" class="section level2">
 <h2>Twins and IQ</h2>
 <p>In the mid 20th century, a study was conducted that tracked down identical twins that were separated at birth: one child was raised in the home of their biological parents and the other in a foster home. In an attempt to answer the question of whether intelligence is the result of nature or nurture, both children were given IQ tests.</p>
-<p>This data is in a <code>.csv</code> file, which is a very general format for data. You can load our usual packages as well as the data (into the <code>twins</code> dataframe) with the following commands:</p>
+<p>This data is in a <code>.csv</code> file, which is a very general format for data. You can load our usual packages as well as the data (into the <code>twins</code> data frame) with the following commands:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(dplyr)
 <span class="kw">library</span>(ggplot2)
 twins &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;http://andrewpbray.github.io/data/twins.csv&quot;</span>)
@@ -163,7 +163,7 @@ twins &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class
 <li>The linear model (the estimated mean function) is approximately <span class="math inline">\(\hat{y} = 9.2 + 0.9 \times x\)</span>.</li>
 <li>Foster children with higher than average IQs (average of the foster children) will have biological twins with higher than average IQs as well (average of the biological children).</li>
 </ul></li>
-<li><p>Is it reasonable to draw conclusions from this model? Aassess the conditions for a valid model based on the context of this problem using appropriate plots.</p></li>
+<li><p>Is it reasonable to draw conclusions from this model? Assess the conditions for a valid model based on the context of this problem using appropriate plots.</p></li>
 <li><p>This study was used to weigh in on the question of whether IQ is a result of nature (your genes) or nurture (your environment). If IQ was purely a result of nurture, what slope would you expect to see in your linear model? Phrase that hypothetical question in terms of a hypothesis test and interpret the <span class="math inline">\(p\)</span>-value in the context of this problem.</p></li>
 <li><p>At the other end of the argument, the distribution of IQ might be entirely determined by genes. Use a 95% confidence interval on your slope to assess whether this claim is reasonable given your data set. (<code>?confint</code> may be helpful here.)</p></li>
 <li><p>Now consider how the association between IQs would change if social class were taken into account. Create a plot to illustrate the relationship between all three variables (recall the use of the <code>color</code> argument). Just by looking at the plot (and without fitting any models), does it appear that the relationship between the IQs is the same for high social class children as it is for low social class children?</p></li>
