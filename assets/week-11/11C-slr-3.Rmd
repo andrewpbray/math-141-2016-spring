@@ -15,6 +15,11 @@ library(oilabs)
 library(openintro)
 ```
 
+## 
+<center>
+<img src="../figs/res-plots1.png" width = 700>
+</center>
+
 # Outliers
 
 ## What is an outlier? {.build}

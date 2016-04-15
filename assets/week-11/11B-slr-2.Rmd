@@ -21,12 +21,6 @@ library(openintro)
 </center>
 
 
-## 
-<center>
-<img src="../figs/res-plots1.png" width = 700>
-</center>
-
-
 ## Estimating $\beta_1$ {.build}
 
 ```{r find-b1, echo = FALSE}
