@@ -38,8 +38,10 @@ head(email)
 Predicting spam or not using the presence of "winner"
 
 ```{r echo = FALSE, fig.width=5, fig.height = 4}
-qplot(x = winner, fill = factor(spam), data = email, geom = "bar", 
-      position = "fill", ylab = "proportion")
+#qplot(x = winner, fill = factor(spam), data = email, geom = "bar", 
+ #     position = "fill", ylab = "proportion")
+ggplot(email, aes(x = winner, fill = factor(spam))) +
+  geom_bar(position ="fill")
 ```
 
 If "winner" then "spam"?
@@ -70,10 +72,10 @@ If `log(num_char)` < 1, then "spam"?
 Each simple filter can be thought of as a regression model.
 
 ### Filter A
-$spam \sim winner; \quad X_1 \sim X_2$
+$spam \sim winner; \quad G_1 \sim G_2$
 
 ### Filter B
-$spam \sim log(num\_char); \quad X_1 \sim W_1$
+$spam \sim log(num\_char); \quad G_1 \sim K_1$
 
 Each one by itself has poor predictive power, so how can we combine them into
 a single stronger model?
@@ -87,14 +89,17 @@ a single stronger model?
 
 #
 
-## Logistic Regression for B
+## Logistic Regression for B {.flexbox .vcenter}
 
 $$spam \sim log(num\_char)$$
 
-```{r echo = FALSE, fig.width=6, fig.height = 4}
-qplot(x = log(num_char), y = spam, data = email, geom = "point",
-      alpha = I(.1), ylab = "spam") + stat_smooth(method = "glm", family = "binomial",
-                                                  se = FALSE)
+```{r echo = FALSE, eval = TRUE, message = FALSE, fig.width=6, fig.height = 4}
+library(dplyr)
+email <- mutate(email, log_num_char = log(num_char))
+qplot(x = log_num_char, y = spam, data = email, 
+      geom = "point", alpha = I(.1), ylab = "spam") +
+  stat_smooth(method = "glm", method.args = list(family = "binomial"),
+              se = FALSE)
 ```
 
 
