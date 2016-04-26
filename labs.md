@@ -17,23 +17,23 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 ### Labs
 
-1. <a href = "{{ site.baseurl }}/assets/week-01/intro_to_r.html" target = "_blank">Intro to R and RStudio</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab1-key.Rmd" target = "_blank">KEY</a>) 
+1. <a href = "{{ site.baseurl }}/assets/week-01/intro_to_r.html" target = "_blank">Intro to R and RStudio</a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab1-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab1-key.html" target = "_blank"> (HTML)</a>] 
 
-2. <a href = "{{ site.baseurl }}/assets/week-02/intro_to_data.html" target = "_blank">Intro to Data</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab2-key.Rmd" target = "_blank">KEY</a>) 
+2. <a href = "{{ site.baseurl }}/assets/week-02/intro_to_data.html" target = "_blank">Intro to Data</a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab2-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab2-key.html" target = "_blank"> (HTML)</a>] 
 
-3. <a href = "{{ site.baseurl }}/assets/week-03/probability.html" target = "_blank">Probability</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.Rmd" target = "_blank">KEY</a>) 
+3. <a href = "{{ site.baseurl }}/assets/week-03/probability.html" target = "_blank">Probability</a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.html" target = "_blank"> (HTML)</a>] 
 
-4. <a href = "{{ site.baseurl }}/assets/week-06/normal_distribution.html" target = "_blank">The Normal Distribution</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab4-key.Rmd" target = "_blank">KEY</a>) [Bottom image `histQQmatchgg.png` is available (<a href = "{{ site.baseurl }}/assets/lab-keys/histQQmatchgg.png" target = "_blank">here</a>) and you will need it in the same folder as where you saved your Rmd in order to Knit the Rmd.]
+4. <a href = "{{ site.baseurl }}/assets/week-06/normal_distribution.html" target = "_blank">The Normal Distribution</a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab4-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab4-key.html" target = "_blank"> (HTML) </a>]  [Bottom image `histQQmatchgg.png` is available (<a href = "{{ site.baseurl }}/assets/lab-keys/histQQmatchgg.png" target = "_blank">here</a>) and you will need it in the same folder as where you saved your Rmd in order to Knit the Rmd.]
 
-5. <a href = "{{ site.baseurl }}/assets/week-07/inf_for_categorical_data.html" target = "_blank">Inference for Categorical Data</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.Rmd" target = "_blank">KEY</a>)
+5. <a href = "{{ site.baseurl }}/assets/week-07/inf_for_categorical_data.html" target = "_blank">Inference for Categorical Data</a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.html" target = "_blank"> (HTML)</a>] 
 
-6. <a href = "{{ site.baseurl }}/assets/week-08/roadless_usa.html" target = "_blank">Sampling and Estimation for Proportions</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab6-key.Rmd" target = "_blank">KEY</a>)
+6. <a href = "{{ site.baseurl }}/assets/week-08/roadless_usa.html" target = "_blank">Sampling and Estimation for Proportions</a>(<a href = "{{ site.baseurl }}/assets/lab-keys/lab6-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab6-key.html" target = "_blank"> (HTML)</a>] 
 
-7. <a href = "{{ site.baseurl }}/assets/week-09/inf_for_numerical_data.html" target = "_blank">Inference for Numerical Data </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab7-key.Rmd" target = "_blank">KEY</a>)
+7. <a href = "{{ site.baseurl }}/assets/week-09/inf_for_numerical_data.html" target = "_blank">Inference for Numerical Data </a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab7-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab7-key.html" target = "_blank"> (HTML)</a>] 
 
-8. <a href = "{{ site.baseurl }}/assets/week-10/simple_regression.html" target = "_blank">Introduction to Linear Regression </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab8-key.Rmd" target = "_blank">KEY</a>) 
+8. <a href = "{{ site.baseurl }}/assets/week-10/simple_regression.html" target = "_blank">Introduction to Linear Regression </a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab8-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab8-key.html" target = "_blank"> (HTML)</a>]  
 
-9. <a href = "{{ site.baseurl }}/assets/week-11/simple_linear_regression_ii.html" target = "_blank">Simple Linear Regression II </a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab9-key.Rmd" target = "_blank">KEY</a>)
+9. <a href = "{{ site.baseurl }}/assets/week-11/simple_linear_regression_ii.html" target = "_blank">Simple Linear Regression II </a> [<a href = "{{ site.baseurl }}/assets/lab-keys/lab9-key.Rmd" target = "_blank">KEY (Rmd)</a> (<a href = "{{ site.baseurl }}/assets/lab-keys/lab9-key.html" target = "_blank"> (HTML)</a>] 
 
 10. <a href = "{{ site.baseurl }}/assets/week-12/multiple_regression.html" target = "_blank">Multiple Linear Regression </a> <!--(<a href = "{{ site.baseurl }}/assets/lab-keys/lab10-key.Rmd" target = "_blank">KEY</a>)-->
 
