@@ -348,8 +348,9 @@ Similarly, what if I told you someone was 5’1’’?</p></li>
 \end{aligned}
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">inverse.logit &lt;-<span class="st"> </span>function(x, m){
-  linear.equation &lt;-<span class="st"> </span>m[<span class="dv">1</span>] +<span class="st"> </span>m[<span class="dv">2</span>] *<span class="st"> </span>x
-  <span class="dv">1</span> /<span class="st"> </span>(<span class="dv">1</span> +<span class="st"> </span><span class="kw">exp</span>(-linear.equation))
+  linear.equation &lt;-<span class="st"> </span><span class="kw">coef</span>(m)[<span class="dv">1</span>] +<span class="st"> </span><span class="kw">coef</span>(m)[<span class="dv">2</span>] *<span class="st"> </span>x
+  pred &lt;-<span class="st"> </span><span class="dv">1</span> /<span class="st"> </span>(<span class="dv">1</span> +<span class="st"> </span><span class="kw">exp</span>(-linear.equation))
+  <span class="kw">return</span>(<span class="kw">unname</span>(pred))
 }</code></pre></div>
 <ol start="12" style="list-style-type: decimal">
 <li><p>The first user in the data set’s height is 64 inches. Using the <code>inverse.logit</code> function above (make sure to copy it over into a chunk in your report before you try to use it!), what is the fitted probability <span class="math inline">\(\widehat{p}\)</span> that this user is female?</p></li>
