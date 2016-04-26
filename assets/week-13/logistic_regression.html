@@ -291,7 +291,6 @@ Similarly, what if I told you someone was 5’1’’?</p></li>
 <span class="kw">str_detect</span>(user1_essays, <span class="st">&quot;statistics&quot;</span>)
 <span class="kw">str_detect</span>(user1_essays, <span class="st">&quot;hardcore&quot;</span>)</code></pre></div>
 <p>We can use <code>str_detect</code> for all users at once as well. For example, we search for the use of the word “wine” and assign it to a new variable in <code>profiles</code> called <code>has.wine</code>:</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">profiles.subset &lt;-<span class="st"> </span>profiles.subset %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">has.wine =</span> <span class="kw">str_detect</span>(essays, <span class="st">&quot;wine&quot;</span>))
 <span class="kw">table</span>(profiles.subset$has.wine)
