@@ -37,4 +37,4 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 10. <a href = "{{ site.baseurl }}/assets/week-12/multiple_regression.html" target = "_blank">Multiple Linear Regression </a> [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab10-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab10-key.html" target = "_blank"> (HTML)</a>]
 
-11. <a href = "{{ site.baseurl }}/assets/week-13/logistic_regression.html" target = "_blank">Logistic Regression </a>  <!--[KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab11-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab11-key.html" target = "_blank"> (HTML)</a>] -->
+11. <a href = "{{ site.baseurl }}/assets/week-13/logistic_regression.html" target = "_blank">Logistic Regression </a>  [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab11-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab11-key.html" target = "_blank"> (HTML)</a>]

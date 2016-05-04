@@ -1,0 +1,350 @@
+---
+title: "Logistic regression"
+output:
+  html_document:
+#    css: ../lab.css
+    highlight: pygments
+    theme: cerulean
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(eval = TRUE)
+```
+
+
+
+## OkCupid Data
+
+We load the packages needed for this analysis and set the number of digits to output to 4.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(downloader)
+library(readr)
+options(digits = 4, dplyr.print_max = 1e9)
+```
+
+```{r get_deta, message=FALSE, warning=FALSE}
+url <- "https://raw.githubusercontent.com/rudeboybert/JSE_OkCupid/master/profiles.csv.zip"
+if(!file.exists("profiles.zip"))
+  download(url, dest = "profiles.zip", mode = "wb")
+if(!file.exists("profiles.csv"))
+  unzip("profiles.zip")
+set.seed(2016)
+if(!exists("profiles")){
+  profiles <- read_csv("profiles.csv") %>% sample_frac(size = 0.1)
+  saveRDS(profiles, file = "profiles.rds")
+} else {
+  profiles <- readRDS("profiles.rds")
+}
+essays <- profiles %>% select(starts_with("essay"))
+```
+
+
+1.  In the "Environment" panel of RStudio, click on `profiles`.  A spreadsheet 
+of the data should pop up.  (Remember this is the same as typing `View(profiles)` in the R
+console.)  Which variables are numerical?  Which ones are 
+categorical?
+
+*Here is a listing of the type of each variable in `profiles`:*
+
+Variable            | Type
+------------------- | -----------------------
+`age`               | numerical
+`body_type`         | categorical
+`diet`              | categorical
+`drinks`            | categorical
+`drugs`             | categorical
+`education`         | categorical
+`essay0` - `essay9` | categorical
+`ethnicity`         | categorical
+`height`            | numerical
+`income`            | numerical
+`job`               | categorical
+`last_online`       | categorical
+`location`          | categorical
+`offspring`         | categorical
+`orientation`       | categorical
+`pets`              | categorical
+`religion`          | categorical
+`sex`               | categorical
+`sign`              | categorical
+`smokes`            | categorical
+`speaks`            | categorical
+`status`            | categorical
+
+
+2.  Pick any one categorical and one numerical variable. Perform an exploratory data analysis of these variables by plotting these variables individually and pairwise.  (Note that your
+results may be messing, i.e., lots of levels.  This is the nature of raw data.)
+
+*I chose `age` for my numerical variable and `smokes` for my categorical variable.*
+
+```{r eda}
+qplot(x = age, data = profiles, geom = "histogram", binwidth = 1, col = I("white"))
+qplot(x = smokes, data = profiles, geom = "bar")
+qplot(y = age, x = smokes, data = profiles, geom = "boxplot")
+```
+
+3.  What proportion of users are female?  What are some possible explanations 
+for this result?  (Note that the `prop.table` and `table()` functions will likely come in handy here.)
+
+```{r female}
+prop.table(table(profiles$sex))
+```
+
+*There are only about 41% of females in this data set.  Men may be more willing to be on an online dating site than women.  There are surely many other reasonable explanations here.*
+
+4.  The essay questions are quite large and do not fit into one screen.  Type 
+`print.data.frame(slice(essays, 6))` in R to view the contents of the sixth user, for example.  What type of music or TV shows does this user like?
+
+```{r}
+print.data.frame(slice(essays, 6))
+```
+
+*This user likes Indie Rock and shows like Breaking Bad and Mad Men.*
+
+5.   Say you want to display a mosaic plot of categorical variables `x` and `y`, use `mosaicplot(table(x, y))`. Recall that to access variables in a data frame you need to use the `$` as in `dataframe$variable`. Create a mosaic plot of the relationship between `sex` and `orientation`. 
+What can you say about the dating pool for San Francisco OkCupid users?  What is
+the single largest dating demographic group in San Francisco?  
+
+```{r mosaic}
+mosaicplot(table(profiles$sex, profiles$orientation))
+```
+
+*Based on the mosaic plot, straight males appears to be the largest demographic group in San Francisco.*
+
+
+```{r plot_height, message=FALSE, warning=FALSE}
+qplot(x = height, data = profiles, geom = "bar", 
+      color = I("white"), xlab = "Height (in)") + 
+  facet_grid(sex ~ .)
+```
+
+
+```{r plot_height_trim, message=FALSE, warning=FALSE}
+profiles.subset <- profiles %>% filter(height >= 55 & height <= 80)
+qplot(x = height, data = profiles.subset, geom = "histogram", 
+    color = I("white"), binwidth = 1, xlab = "Height (in)") + 
+  facet_grid(sex ~ .)
+```
+
+6.  What changed in the plots of `height` for the `profiles` data frame versus the
+`profiles.subset` data frame?  Why?
+
+*Removing the outliers zooms the plot in for both males and females.  With the outliers included,
+`qplot` automatically determines that these values should be plotted.*
+
+7. What phenomenon do you think explains the unusual spike for males at 72 
+inches?  Similarly, what phenomenon do you think explains the anomalous spike 
+for females at 64 inches?
+
+*72 inches corresponds to six feet for men.  This is frequently thought of as "normal" height, just as 5'4"
+corresponds to normal for females.*
+
+8.  If I told you someone was 6'4'', what would you predict their gender to be?  
+Similarly, what if I told you someone was 5'1''?
+
+*6'4" would likely be male and 5'1" would likely be female.*
+
+9.  For about which height do we start seeing a higher proportion of males than 
+females?  You can think of this as a "point of indifference" i.e. we have a
+similar proportion of males and females being of that height.
+
+*There are more males than females in the sample so we must be careful in directly comparing the counts
+on the y axis.  The difference isn't enormous though so we will use the bin heights as a proxy here.  At around 67 inches we start to see the same number of males than females.*
+
+10.  Make a similarly split histogram of age by sex.  What do you observe?
+
+```{r plot_age_trim, message=FALSE, warning=FALSE}
+qplot(x = age, data = profiles.subset, geom = "histogram", 
+    color = I("white"), binwidth = 1, xlab = "Height (in)") + 
+  facet_grid(sex ~ .)
+```
+
+*Both men and women have similar distributions in terms of shape--both right skewed.  The larger number of men is likely due to an influx of men between 20 and 30 years of age.*
+
+```{r collapse}
+essays <- profiles.subset %>% select(starts_with("essay")) %>%
+  apply(MARGIN = 1, FUN = paste, collapse = " ") %>%
+  str_replace_all("\n", " ") %>% 
+  str_replace_all("<br />", " ")
+```
+
+We can use `str_detect` for all users at once as well.  For example, 
+we search for the use of the word "wine" and assign it to a new variable in 
+`profiles` called `has.wine`:
+
+```{r has.wine}
+profiles.subset <- profiles.subset %>% mutate(has.wine = str_detect(essays, "wine"))
+table(profiles.subset$has.wine)
+qplot(x = has.wine, data = profiles.subset, geom = "bar")
+```
+
+We now display the relationship between the two categorical variables 
+`profiles$has.wine` and `profiles$sex` using mosaic plots.
+
+```{r wine_sex}
+table(profiles.subset$sex, profiles.subset$has.wine)
+mosaicplot(table(profiles.subset$sex, profiles.subset$has.wine), 
+  xlab = "Sex", ylab = "Word Use = wine",
+  main = "Sex vs Word Use = wine")
+```
+
+11.  What is your interpretation of the mosaic plot?
+
+*There are more males than females so the width of the boxes for `m` is larger.  There is a slightly larger proportion of females that used the word `"wine"` than males.*
+
+<!--
+11.  Repeat the above exercise with a different word.
+-->
+
+
+```{r glm}
+profiles.subset <- profiles.subset %>%
+  mutate(is.female = ifelse(sex == "f", 1, 0))
+sex_height <- glm(is.female ~ height, family = binomial, data = profiles.subset)
+summary(sex_height)
+```
+
+
+```{r inv_log}
+inverse.logit <- function(x, m){
+  linear.equation <- coef(m)[1] + coef(m)[2] * x
+  pred <- 1 / (1 + exp(-linear.equation))
+  return(unname(pred))
+}
+```
+
+
+12.  The first user in the data set's height is 64 inches.  Using the `inverse.logit` function above (make sure to copy it over into a chunk
+in your report before you try to use it!), what is the fitted 
+probability $\widehat{p}$ that this user is female?
+
+```{r inv_log_pred}
+inverse.logit(x = 64, m = sex_height)
+```
+
+*The predicted probability that a user is female if their height is 64 inches is `r inverse.logit(x = 64, m = sex_height)`.*
+
+13.  What is the fitted probability that a user is female if their height is 75 inches?
+
+```{r inv_log_pred2}
+inverse.logit(x = 75, m = sex_height)
+```
+
+
+```{r fit_hist}
+profiles.subset$p.hat <- fitted(sex_height)
+qplot(profiles.subset$p.hat, xlab = expression(hat(p)[i]),
+  color = I("white"), geom = "histogram", binwidth = 0.1)
+```
+
+
+```{r with_line}
+threshold <- 0.5
+qplot(profiles.subset$p.hat, xlab = expression(hat(p)[i]),
+  color = I("white"), binwidth = 0.1) +
+  geom_vline(xintercept = threshold, col = "blue")
+```
+
+
+```{r pred_perf}
+profiles.subset <- profiles.subset %>% 
+  mutate(predicted.female = (profiles.subset$p.hat >= threshold))
+table(truth = profiles.subset$is.female, prediction = profiles.subset$predicted.female)
+```
+
+14. Of the people we predicted to be female, what proportion did we predict 
+correctly? Of the people who were truly females, what proportion did we predict 
+correctly? Overall, what proportion of users' sex did we predict correctly?
+
+
+*Focusing on the `TRUE` column, we see that of the 520 + 1962 = `r 520 + 1962` users we predicted
+to be female, 1962 of them actually were.  This corresponds to a proportion of `r 1962 / (1962 + 520)`.  Similarly, focusing on the `FALSE` column, 3021 of the `r 3021 + 484` were correctly predicted as males corresponding to a proportion of `r 3021 / (3021 + 484)`.  Thus, out of the total number of people in the data set (`r 3021 + 520 + 484 + 1962`), `r 3021 + 1962` were predicted correctly corresponding to a prediction success rate of `r (3021 + 1962) / (3021 + 520 + 484 + 1962)`.*
+
+* * *
+
+## On Your Own (For practice only - No need to turn in)
+
+-   We used 50% as a prediction threshold on the $p_i$'s to predict a user as 
+female.  What height does this correspond to?  Compare this height to our "point 
+of indifference" height from earlier.  
+
+*Using our modified logistic regression equation and this value of $\hat{p} = 0.5$, we can solve the equation for
+`height` (in inches):*
+
+\begin{align*} 
+ln \left(\dfrac{\hat{p}}{1 - \hat{p}} \right) &= b_0 + b_1 * height  \\
+ ln(0.5/0.5) &= 43.799 - 0.651 * height \\
+ 0 &= 43.799 - 0.651 * height \\
+ \Rightarrow height &= 67.28
+\end{align*}
+
+*This height matches up to the nearest inch with our "point of indifference" from earlier.*
+
+-   Use 25% as a different prediction threshold on the $p_i$'s to declare a user
+as female.  Overall, what proportion of users' sex did we predict correctly? Compare this value to the earlier one.  Which prediction threshold do you prefer? 
+
+```{r thres_25}
+threshold <- 0.25
+profiles.subset <- profiles.subset %>% 
+  mutate(predicted.female.25 = (profiles.subset$p.hat >= threshold))
+table(truth = profiles.subset$is.female, prediction = profiles.subset$predicted.female.25)
+```
+
+*Out of the total number of people in the data set (`r 2681 + 860 + 299 + 2147`), `r 2681 + 2147` were predicted correctly corresponding to a prediction success rate of `r (2681 + 2147) / (2681 + 860 + 299 + 2147)` with a `threshold` of 0.25.  This performs slightly worse than the 50% threshold so we should prefer 50%.*
+
+-   Fit a logistic regression using both `height` and `has.wine` as predictor 
+variables.  What is the fitted probability of being female for a user who is 69 
+inches tall and does not have the word "wine" in their profile?
+
+```{r}
+multi_log <- glm(is.female ~ height + has.wine, family = binomial, data = profiles.subset)
+summary(multi_log)
+```
+
+*Since not having wine in their profile corresponds to the baseline level, our predicted equation is:*
+\[
+logit(\hat{p}) = 43.7806 - 0.6526 * height + 0.6718 (0) = 43.7806 - 0.6526 * height
+\]
+
+*We can, therefore, use the `inverse_logit` function from earlier:*
+
+```{r inv_log_multi}
+inverse.logit(x = 69, m = multi_log)
+```
+
+-   Use 50% as a prediction threshold on the $p_i$'s to declare a user as female 
+on our new model based on `height` and `has.wine`.  Overall, what proportion of users' sex did we predict 
+correctly?  Did our prediction performance improve?  What do these results say 
+about including `has.wine` as a predictor variable?
+
+```{r thres_new}
+threshold <- 0.5
+profiles.subset$p.hat2 <- fitted(multi_log)
+profiles.subset <- profiles.subset %>% 
+  mutate(predicted.female.new = (profiles.subset$p.hat2 >= threshold))
+table(truth = profiles.subset$is.female, prediction = profiles.subset$predicted.female.new)
+```
+
+*Out of the total number of people in the data set (`r 2991 + 550 + 446 + 2000`), `r 2991 + 2000` were predicted correctly corresponding to a prediction success rate of `r (2991 + 2000) / (2991 + 550 + 446 + 2000)` with a `threshold` of 0.50.  This value is just barely larger than the success rate we achieved with using `height` alone. This implies that if `height` is included in the model, the addition of `has.wine` does not significantly increase our success rate.  Looking at the `summary` of `multi_log`, we do see that `has.wine` has a coeffienct that is statistically different than 0 though.* 
+
+## Acknowledgements
+
+We thank OkCupid president and co-founder Christian Rudder for agreeing to our 
+use of this dataset (under the condition that the dataset remains public) and 
+Everett Wetchler \url{everett.wetchler@gmail.com} for providing the data; the 
+original dataset can be found at [https://github.com/rudeboybert/JSE_OkCupid](https://github.com/rudeboybert/JSE_OkCupid).
+
+<div id="license">
+This is a product of OpenIntro that is released under a [Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0).
+This lab was written by Albert Y. Kim, Andrew Bray, and Chester Ismay.
+</div>
+
+
+
+
+
+
